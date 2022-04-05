@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "BusinessLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{4CF19AE6-E224-4528-AB92-C28251D3F215}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{8621E2A9-2884-4A3A-BE6E-A95FB37E51B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4CF19AE6-E224-4528-AB92-C28251D3F215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF19AE6-E224-4528-AB92-C28251D3F215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF19AE6-E224-4528-AB92-C28251D3F215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8621E2A9-2884-4A3A-BE6E-A95FB37E51B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8621E2A9-2884-4A3A-BE6E-A95FB37E51B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8621E2A9-2884-4A3A-BE6E-A95FB37E51B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8621E2A9-2884-4A3A-BE6E-A95FB37E51B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
