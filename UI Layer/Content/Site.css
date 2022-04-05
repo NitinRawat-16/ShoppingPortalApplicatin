@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.logo-div {
+    margin-top: 0px;
+}
+
+.logo-image {
+    height: 60px;
+    width: 300px;
+    object-fit: cover;
+    
+}
