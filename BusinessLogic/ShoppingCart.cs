@@ -6,5 +6,7 @@ namespace BusinessLogic
 {
     public class ShoppingCart
     {
+        int id;
+        string Name;
     }
 }
