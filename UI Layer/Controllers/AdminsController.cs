@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace UI_Layer.Controllers
 {
-    public class AdminController : Controller
+    public class AdminsController : Controller
     {
         // GET: Admin
-        public ActionResult Index()
+        public ActionResult Home()
         {
             return View();
         }
