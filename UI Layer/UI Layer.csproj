@@ -199,6 +199,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\LogoFinal.png" />
     <Content Include="Images\N3P+.png" />
     <Content Include="Images\N3P--.png" />
     <Content Include="Images\N3P.png" />
