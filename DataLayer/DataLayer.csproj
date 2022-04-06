@@ -50,74 +50,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AspNetRole.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AspNetUser.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AspNetUserClaim.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AspNetUserLogin.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="N3PContestDb.Context.cs">
+    <Compile Include="DbContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>N3PContestDb.Context.tt</DependentUpon>
+      <DependentUpon>DbContext.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="N3PContestDb.cs">
+    <Compile Include="DbContext.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="N3PContestDb.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>N3PContestDb.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="OrderDetail.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductCategory.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductSize.cs">
-      <DependentUpon>N3PContestDb.tt</DependentUpon>
+      <DependentUpon>DbContext.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="N3PContestDb.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>N3PContestDb.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="N3PContestDb.edmx.diagram">
-      <DependentUpon>N3PContestDb.edmx</DependentUpon>
+    <EntityDeploy Include="DbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DbContext.edmx.diagram">
+      <DependentUpon>DbContext.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N3PContestDb.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>N3PContestDb.Context.cs</LastGenOutput>
-      <DependentUpon>N3PContestDb.edmx</DependentUpon>
-    </Content>
-    <Content Include="N3PContestDb.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>N3PContestDb.edmx</DependentUpon>
-      <LastGenOutput>N3PContestDb.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="DbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbContext.edmx</DependentUpon>
+      <LastGenOutput>DbContext.Context.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
