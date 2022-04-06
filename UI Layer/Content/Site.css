@@ -33,3 +33,24 @@ textarea {
     width:300px;
     object-fit: cover;
 }
+.dropdown-cart {
+    min-width: 250px;
+}
+.dropdown-cart li .item {
+        display: block;
+        padding: 3px 10px;
+        margin: 3px 0;
+    }
+
+.dropdown-cart li .item:hover {
+            background-color: #f3f3f3;
+        }
+
+.dropdown-cart li .item:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+            }
