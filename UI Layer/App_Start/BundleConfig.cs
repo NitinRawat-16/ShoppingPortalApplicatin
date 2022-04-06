@@ -30,7 +30,25 @@ namespace UI_Layer
                       "~/Content/DataTables/css/dataTables.bootstrap.css"
                       ));
 
-           
+
+
+
+
+            //Admin
+            bundles.Add(new ScriptBundle("~/bundles/Adminlib").Include(
+                       "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/DataTables/jquery.dataTables.js",
+                       "~/Scripts/DataTables/dataTables.bootstrap.js",
+                        "~/Scripts/bootstrap.js"
+                       ));
+
+            bundles.Add(new StyleBundle("~/Content/Admincss").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/Site.css",
+                      "~/Content/DataTables/css/dataTables.bootstrap.css",
+                        "~/Content/Admin.css"
+                      ));
+
         }
     }
 }

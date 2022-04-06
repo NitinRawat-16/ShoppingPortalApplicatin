@@ -13,5 +13,28 @@ namespace UI_Layer.Controllers
         {
             return View();
         }
+
+        public ActionResult ProductList()
+        {
+            return View();
+        }
+
+        public ActionResult ProductAlert()
+        {
+            return View();
+        }
+
+        public ActionResult ProductConfirm()
+        {
+            return View();
+        }
+
+        public ActionResult TodayExpectedDelivery()
+        {
+            return View();
+        }
+
+
+
     }
 }
