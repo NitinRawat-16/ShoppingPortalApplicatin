@@ -191,6 +191,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Admin.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -427,6 +428,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Admins\_LayoutAdmin.cshtml" />
     <Content Include="Views\Admins\Home.cshtml" />
+    <Content Include="Views\Admins\ProductList.cshtml" />
+    <Content Include="Views\Admins\ProductAlert.cshtml" />
+    <Content Include="Views\Admins\ProductConfirm.cshtml" />
+    <Content Include="Views\Admins\TodayExpectedDelivery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
