@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AspNetRole.cs">
+      <DependentUpon>ShoppingPortalEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>ShoppingPortalEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaim.cs">
+      <DependentUpon>ShoppingPortalEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogin.cs">
+      <DependentUpon>ShoppingPortalEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="OrderDetail.cs">
       <DependentUpon>ShoppingPortalEntities.tt</DependentUpon>
     </Compile>
