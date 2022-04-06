@@ -81,6 +81,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DbContext.edmx</DependentUpon>
       <LastGenOutput>DbContext.Context.cs</LastGenOutput>
+      <CustomToolNamespace>Model</CustomToolNamespace>
     </Content>
   </ItemGroup>
   <ItemGroup>
