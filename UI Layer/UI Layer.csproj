@@ -183,6 +183,10 @@
     <Compile Include="Migrations\202204050915592_addfieldAddress.designer.cs">
       <DependentUpon>202204050915592_addfieldAddress.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204060617432_AddFieldsInAspNetUserTable.cs" />
+    <Compile Include="Migrations\202204060617432_AddFieldsInAspNetUserTable.designer.cs">
+      <DependentUpon>202204060617432_AddFieldsInAspNetUserTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -455,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204050915592_addfieldAddress.resx">
       <DependentUpon>202204050915592_addfieldAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204060617432_AddFieldsInAspNetUserTable.resx">
+      <DependentUpon>202204060617432_AddFieldsInAspNetUserTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
