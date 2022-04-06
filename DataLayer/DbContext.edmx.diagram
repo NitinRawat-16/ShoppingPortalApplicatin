@@ -11,6 +11,13 @@
         <EntityTypeShape EntityType="DotNetTeamModel.ProductSize" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="DotNetTeamModel.FK_Products_ProductCategory" ManuallyRouted="false" />
         <AssociationConnector Association="DotNetTeamModel.FK_ProductSizeId_Products" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DotNetTeamModel.AspNetRole" Width="1.5" PointX="3.375" PointY="6.5" />
+        <EntityTypeShape EntityType="DotNetTeamModel.AspNetUserClaim" Width="1.5" PointX="7.875" PointY="7.625" />
+        <EntityTypeShape EntityType="DotNetTeamModel.AspNetUserLogin" Width="1.5" PointX="7.875" PointY="5" />
+        <EntityTypeShape EntityType="DotNetTeamModel.AspNetUser" Width="1.5" PointX="5.625" PointY="5.25" />
+        <AssociationConnector Association="DotNetTeamModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="DotNetTeamModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="DotNetTeamModel.AspNetUserRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
