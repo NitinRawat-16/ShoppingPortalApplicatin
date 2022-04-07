@@ -172,6 +172,7 @@
     <Compile Include="Controllers\AdminsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductDisplayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -432,6 +433,7 @@
     <Content Include="Views\Admins\ProductAlert.cshtml" />
     <Content Include="Views\Admins\ProductConfirm.cshtml" />
     <Content Include="Views\Admins\TodayExpectedDelivery.cshtml" />
+    <Content Include="Views\ProductDisplay\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

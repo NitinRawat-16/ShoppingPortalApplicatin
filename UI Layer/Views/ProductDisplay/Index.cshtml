@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Model.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Product Page</h1>
+
+<table class="table  table-bordered  table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductAddedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductAvailability)
+        </th>
+        <th>Cart</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(item => product.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(item => product.ProductCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(item => product.ProductAddedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(item => product.ProductAvailability)
+            </td>
+            <td>
+               <button id="Cart"  class = "glyphicon glyphicon-shopping-cart" style="margin:70px; padding:10px; padding-right:50px;padding-left:50px; color:aquamarine;" >Cart</button>
+            </td>
+
+        </tr>
+    }
+</table>
+
