@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="63bfb58d65a548888ffebc5385efcf62" Name="Diagram1">
+        <EntityTypeShape EntityType="TestDbModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.AspNetRole" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.AspNetUser" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.OrderConfirmed" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.OrderDetail" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.Order" Width="1.5" PointX="8.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.ProductCategory" Width="1.5" PointX="3.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.Product" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.ProductSize" Width="1.5" PointX="3.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestDbModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TestDbModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK_OrderConfirmed_OrderConfirmed1" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK_Orders_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK__OrderConf__Produ__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK__Orders__OrderDet__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK__Orders__ProductI__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK_Products_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.FK_Products_ProductSize" ManuallyRouted="false" />
+        <AssociationConnector Association="TestDbModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

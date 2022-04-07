@@ -16,7 +16,8 @@ namespace Model
     {
         public Product()
         {
-            this.ProductSizes = new HashSet<ProductSize>();
+            this.OrderConfirmeds = new HashSet<OrderConfirmed>();
+            this.Orders = new HashSet<Order>();
         }
     
         public int ProductId { get; set; }
@@ -27,8 +28,13 @@ namespace Model
         public int ProductAvailability { get; set; }
         public int TotalProductAdded { get; set; }
         public int ProductAdminNotification { get; set; }
+        public int ProductSizeId { get; set; }
+        public string ProductImage { get; set; }
+        public int ProductPrice { get; set; }
     
+        public virtual ICollection<OrderConfirmed> OrderConfirmeds { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
         public virtual ProductCategory ProductCategory { get; set; }
-        public virtual ICollection<ProductSize> ProductSizes { get; set; }
+        public virtual ProductSize ProductSize { get; set; }
     }
 }

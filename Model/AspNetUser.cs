@@ -18,6 +18,8 @@ namespace Model
         {
             this.AspNetUserClaims = new HashSet<AspNetUserClaim>();
             this.AspNetUserLogins = new HashSet<AspNetUserLogin>();
+            this.OrderConfirmeds = new HashSet<OrderConfirmed>();
+            this.Orders = new HashSet<Order>();
             this.AspNetRoles = new HashSet<AspNetRole>();
         }
     
@@ -33,10 +35,11 @@ namespace Model
         public bool LockoutEnabled { get; set; }
         public int AccessFailedCount { get; set; }
         public string UserName { get; set; }
-        public string Address { get; set; }
     
         public virtual ICollection<AspNetUserClaim> AspNetUserClaims { get; set; }
         public virtual ICollection<AspNetUserLogin> AspNetUserLogins { get; set; }
+        public virtual ICollection<OrderConfirmed> OrderConfirmeds { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<AspNetRole> AspNetRoles { get; set; }
     }
 }
