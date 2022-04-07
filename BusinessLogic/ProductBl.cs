@@ -21,5 +21,10 @@ namespace BusinessLogic
             return prodDb.GetAll();
         }
 
+        public Product GetProduct(int id)
+        {
+            return prodDb.GetProduct(id);
+        }
+
     }
 }

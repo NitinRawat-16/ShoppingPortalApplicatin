@@ -9,12 +9,9 @@ namespace DataLayer
 {
     public class ProductDb
     {
-        private PortalEntities Db;
+        private TestDb Db;
 
-        public ProductDb()
-        {
-            Db = new PortalEntities();
-        }
+        public ProductDb() => Db = new TestDb();
 
         public IEnumerable<Product> GetAll ()
         {
@@ -22,6 +19,12 @@ namespace DataLayer
             return products;
         }
 
+        public Product GetProduct(int id)
+        {
+            var product = Db.Products.SingleOrDefault(x=> x.ProductId == id);
+
+            return product;
+        }
 
 
 

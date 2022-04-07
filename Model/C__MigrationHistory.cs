@@ -12,19 +12,11 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class ProductSize
+    public partial class C__MigrationHistory
     {
-        public ProductSize()
-        {
-            this.Products = new HashSet<Product>();
-        }
-    
-        public int ProductSizeId { get; set; }
-        public int S { get; set; }
-        public int M { get; set; }
-        public int L { get; set; }
-        public int Xl { get; set; }
-    
-        public virtual ICollection<Product> Products { get; set; }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }

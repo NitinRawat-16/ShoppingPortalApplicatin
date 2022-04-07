@@ -12,19 +12,15 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class ProductSize
+    public partial class Order
     {
-        public ProductSize()
-        {
-            this.Products = new HashSet<Product>();
-        }
+        public int OrderId { get; set; }
+        public int ProductId { get; set; }
+        public string UserId { get; set; }
+        public int OrderDetailsId { get; set; }
     
-        public int ProductSizeId { get; set; }
-        public int S { get; set; }
-        public int M { get; set; }
-        public int L { get; set; }
-        public int Xl { get; set; }
-    
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual AspNetUser AspNetUser { get; set; }
+        public virtual OrderDetail OrderDetail { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

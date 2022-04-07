@@ -12,19 +12,12 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class ProductSize
+    public partial class sysdiagram
     {
-        public ProductSize()
-        {
-            this.Products = new HashSet<Product>();
-        }
-    
-        public int ProductSizeId { get; set; }
-        public int S { get; set; }
-        public int M { get; set; }
-        public int L { get; set; }
-        public int Xl { get; set; }
-    
-        public virtual ICollection<Product> Products { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 <#@ include file="EF.Utility.CS.ttinclude"#><#@ 
  output extension=".cs"#><#
 
-const string inputFile = @"../DataLayer/DbContext.edmx";
+const string inputFile = @"../DataLayer/DbModel.edmx";
 var textTransform = DynamicTextTransformation.Create(this);
 var code = new CodeGenerationTools(this);
 var ef = new MetadataTools(this);
@@ -14,7 +14,7 @@ var codeStringGenerator = new CodeStringGenerator(code, typeMapper, ef);
 if (!typeMapper.VerifyCaseInsensitiveTypeUniqueness(typeMapper.GetAllGlobalItems(itemCollection), inputFile))
 {
     return string.Empty;
-} 
+}
 
 WriteHeader(codeStringGenerator, fileManager);
 
